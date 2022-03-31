@@ -13,7 +13,9 @@
 	<body>
 		<section id="my-planner">
 			<h2>My Yearly Plan</h2>
-			<p>{{primaryGoal}}</p>
+			<p v-html="primaryGoal"></p>
+			<p v-html="Math.random()"></p>
+			<p v-html="outputMessage()"></p>
 			<a v-bind:href="planLink">Trello link==>{{planLink}}</a>
 		</section>
 		
